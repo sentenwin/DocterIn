@@ -1,0 +1,40 @@
+<ion-view view-title="Book My Appoinment">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+
+    <div class="list">
+        <label class="item item-input item-floating-label">
+            <h2><strong>Appoinment  Time</strong></h2>
+        </label>  
+        <label class="item item-radio">
+          <input type="radio" name="group">
+          <div class="item-content">
+            Morning
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+       <label class="item item-radio">
+          <input type="radio" name="group">
+          <div class="item-content">
+            Evening
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label> 
+        <br><br>
+          <button class="button button-full button-assertive" ng-click="showPopup()">Book My Appoinment</button>                   
+    </div>
+           
+
+           <!-- <div class="item card-item">
+            <div  class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                   <img src="img/pmc.jpg">
+                   <h2>Token Number:7</h2>
+                <p><b>3 Hours To Go </p>
+                   
+                </div>
+            </div>
+        </div-->
+        <br>
+        
+    </ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view view-title="MyCheckup">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-color: #546e7a;">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/pmc.jpg');"></div>
+                <h3><a class="light">Padmalaya Medical Centre</a></h3>
+                <h4>(Multi Speciality Hospital)</h4>
+            </div>
+        </div>
+         <button id="fab" class="button button-positive button-fab button-fab-bottom-right" ui-sref='app.appoinment'>
+            <i class="icon ion-checkmark-round"></i>
+        </button>
+        <div class="tabs tabs-dark tabs-icon-top static">
+             <a ui-sref="app.appoinment" class="tab-item">
+                <i class="icon ion-arrow-graph-up-right"></i> MyAppoinment
+            </a>
+            <a ui-sref="app.contact" class="tab-item">
+                <i class="icon  ion-android-contact"></i> Contact
+            </a>
+            <a ui-sref="app.facility" class="tab-item">
+                <i class="icon ion-aperture"></i> Fasility
+            </a>
+          
+        </div>
+    <!--<ion-nav-view name="fabContent" ui-sref="app.facility"></ion-nav-view>-->
+   <a class="fabContent" ui-sref="app.appointment"></a>
+        <h4 class="content padding double-padding-x">Specialist</h4>
+        <div class="list ">
+            <a ui-sref="app.doc" class="item item-avatar item-icon-right item-text-wrap">
+                <img src="img/jon-snow.jpg">
+                <h2>Dr.R.Gurusundar</h2>
+                <p>MBBS., M.S.,</p>
+               <!-- <i class="icon ion-chatbubble muted"></i-->
+            </a>
+            <a ui-sref="app.doctr" class="item item-avatar item-icon-right item-text-wrap">
+                <img src="img/sansa.jpg">
+                <h2>Dr.M.Sundari</h2>
+                <p>B.Sc., M.B.B.S.,PGDIP, M&NC</p>
+                <!--i class="icon ion-chatbubble muted"></i-->
+            </a>
+           
+        </div>
+    </ion-content>
+</ion-view>
